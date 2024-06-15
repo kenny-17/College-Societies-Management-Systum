@@ -29,16 +29,16 @@ if (isset($_POST['email'], $_POST['password'])) {
             exit();
         } else {
             // Incorrect password
-            header("Location: login.html?error=1");
+            header("Location: index.html?error=1");
             exit();
         }
     } else {
         // User not found
-        header("Location: login.html?error=2");
+        header("Location: index.html?error=2");
         exit();
     }
 } else {
     // Form data not set
-    header("Location: login.html");
+    header("Location: index.html");
     exit();
 }
